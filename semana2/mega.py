@@ -3,7 +3,6 @@
 from sys import argv
 from math import sqrt, floor
 
-
 base = 1024
 
 def getTotal(total, mag):
