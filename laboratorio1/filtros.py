@@ -95,7 +95,7 @@ def slicing(l, n):
 
 # Funcion para aplicar el filtro de grises y de limites
 # Recibe la lista de pixeles a aplicar el filtro
-# Recibe 2 argumentos opcionales para aplicar el filtro de limites
+# Recibe 2 argumentos opcionales para aplicar el filtro de umbrales
 # un limite inferior y superior
 def filterG(pixels, lmin=0, lmax=255):
     for a, pixel in enumerate(pixels):           # Recorremos la lista de pixeles
