@@ -1,0 +1,13 @@
+Para que el sistema funcione correctamente, hay que instalar las siguientes librerias.
+
+Python: como lenguaje principal
+OpenCV: Contiene todas las rutinas necesarias para la manipulación de imágenes. El diseño se centro en utilizar la librería cv2.py que es mucho más eficiente al manipular las imagene en forma de arreglos de numpy
+Numpy: Para la manipulación de los arreglos de las imágenes
+PIL: Para la conversión de las imágenes desde OpenCV
+Image: La rutina Image.fromstring para convertir la imágen desde OpenCV a PIL
+ImageTk: Para mostrar las imágenes desde PIL a TKInter
+Tkinter: Para generar la interfaz principal
+sys: argv para leer los parámetros desde terminal
+time: time para cronometrar el rendimiento del sistema
+
+Mover el contenido a una carpeta en el equipo local
