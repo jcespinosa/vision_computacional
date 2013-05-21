@@ -1,8 +1,115 @@
-Sistema para la detección y clasificación de señales de tráfico en tiempo real utilizando técnicas básicas de visión computacional.
+Detección de señales de tráfico
+===============================
 
-Verificar que se tengan las librerias especificadas en el archivo INSTALL
+Sistema para la detección y clasificación de señales de tráfico en tiempo 
+real utilizando técnicas básicas de visión computacional.
+Se implementan 3 métodos principales
 
-Para correr el sistema, posicionarse en la carpeta del proyecto y correr el siguiente comando en la terminal
+- Color segmentation
+- ROI Extraction
+- Feature detection usando el método SURF
 
-python gui.py
+
+
+Compatibilidad
+==============
+
+El sistema ha sido testeado en las siguientes plataformas
+
+- Linux Ubuntu 12.04 64 bits
+- Windows XP 64 bits
+
+No se conocen otros problemas de compatibilidad debido a las pocas pruebas
+realizadas
+
+
+
+Instalación
+===========
+
+Leer el archivo INSTALL para las instrucciones de instalación
+
+
+
+Uso
+===
+
+Descargar el programa (de ser necesario descomprimir el contenido) en alguna
+carpeta de nuestro gusto.
+
+El programa utiliza 3 fuentes de entrada de datos
+- Imágenes estáticas
+- Archivo de video
+- Webcam
+
+El programa permite seleccionar cualquiera de las tres fuentes dentro de la
+clase Detection. Comentar y descomentar las lineas marcadas para seleccionar
+la fuente de entrada de datos.
+
+El programa no acepta parámetros de línea de comandos.
+
+Para correr el programa, posicionarse dentro de la carpeta descargada y correr
+en terminal el comando:
+
+            python gui.py
+
+Algunas líneas del código están marcadas para comentarse o descomentarse, dichas líneas
+controlan:
+- Medio de entrada de datos
+- Mostrar o ocultar información de debug
+- Tratar los frames del video con ciertos filtros o no
+
+
+
+Bugs conocidos
+==============
+
+Existe un problema en el algoritmo del método Feature Detection, el sistema puede
+cerrase sin previo aviso al llegar a ésta parte. No es muy notorio, solo en pruebas
+exhaustivas
+
+* Fix provisional: Se implemento un bloque try...catch...
+* Puedes ayudar a hallar la correcta solución a este bug
+
+
+
+Autor
+=====
+
+El código fue implementado por Juan Carlos Espinosa Ceniceros, estudiante
+de la carrera Ingeniería en Tecnologías de Software.
+FIME - UANL - Mayo 2013
+
+
+
+Contacto
+========
+
+Para cualquier duda o aclaración, se pueden utilizar los siguientes canales:
+
+E-mail: juank_kenny@hotmail.com
+
+
+
+Licencia
+========
+
+Se puede descargar y modificar el sistema para añadir mejoras personales o tomar
+snippets del mismo.
+Se recomienda contribuir al mismo y compartir los avances logrados.
+
+Para mas información consultar el archivo LICENCE
+
+
+
+Información adicional
+=====================
+
+Proyecto final de la materia de Visión Computacional de la carrera Ingeniería 
+en Tecnologías de Software, FIME,UANL; impartida por la Dra. Satu
+Elisa Schaeffer en el periodo enero-agosto 2013
+
+Para consultar la información del curso, visitar la siguiente liga
+http://elisa.dyndns-web.com/~elisa/teaching/comp/vision/2013.html
+
 
